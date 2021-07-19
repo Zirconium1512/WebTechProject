@@ -1,0 +1,35 @@
+table
+{
+	height:400px;
+}
+input
+{
+	width: 100%;
+	height: 35px;
+	border: 2px solid tomato;
+	font-size:18px;
+}
+textarea
+{
+	width: 100%;
+	border: 2px solid tomato;
+	height: 70px;
+	font-size:18px;
+}
+select
+{
+	width: 100%;
+	height: 35px;
+	border: 2px solid tomato;
+}
+.select1
+{
+	width: 100%;
+	height: 50px;
+	border: 2px solid tomato;
+}
+input[type=button]:hover
+{
+	background-color: black;
+	color:white;
+}

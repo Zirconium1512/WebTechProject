@@ -1,0 +1,39 @@
+*{
+	margin:0px;
+	padding:0px;
+}	
+#menu ul{
+	list-style: none;
+	z-index: 1000;
+}	
+#menu ul li{
+    background-color:black;
+	border: 1px solid white;
+	border-radius:5px;
+	width: 301.846px;
+	height: 40px;
+	text-align:center;
+	line-height: 40px;
+	float:left;
+	position:relative;
+}
+#menu ul li a{
+    text-decoration: none;
+    color: white;
+	display: block;
+}
+#menu ul li a:hover{
+    color:#ff4c4c;
+}
+font{
+    color:#ff4c4c;
+}
+#menu ul ul{
+	display:none;
+	position:absolute;
+	border-radius:5px;
+}
+#menu ul li:hover > ul
+{	
+	display:block;
+}

@@ -1,0 +1,53 @@
+.top_cat
+{
+	border: 0px solid black;
+	display:flex;
+	justify-content: space-around;
+	align-items:center;
+	
+}	
+.top_cat_pro
+{
+	border-radius:5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 2px solid black;
+	height: 265px;
+	width: 370px;
+	float:left;
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.36);
+	transition: transform 0.5s;
+}
+.top_cat_pro:hover
+{
+	transform: scale(1.05);
+}
+.top_cat_pro img
+{
+	width:100%;
+}		
+.checked
+{
+	color: orange;
+}	
+.starr
+{
+	height: 30px;
+	display:flex;
+	justify-content: center;
+	align-items:center;
+}
+.title
+{
+	text-align:center;
+	padding-top: 8px;
+	justify-content: space-around;
+	align-items:center;
+}
+
+.us
+{
+	text-align:justify;
+	padding-left:20px;
+	padding-right: 20px;
+}

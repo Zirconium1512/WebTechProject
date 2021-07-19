@@ -1,0 +1,222 @@
+<html>
+<head>
+<title>Food Restaurant</title>
+<link rel="stylesheet" type="text/css" href="nav.css">
+<link rel="stylesheet" type="text/css" href="order.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="fav1.ico" type="image/ico" size="16x16">
+<script>
+	window.onload=function()
+	{
+		document.getElementById('loader').style.display="none";
+		document.getElementById('content').style.display="block";
+	}
+</script>
+
+<style>
+	#loader
+	{
+		border: 0px solid red;
+		position: absolute;
+		margin: auto;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 600px;
+		height: 600px;
+	}
+	#loader img
+	{
+		width: 600px;
+	}
+	#content
+	{
+		display: none;
+	}	
+</style>
+</head>
+
+<body>
+<div id="loader">
+	<img src="preloader.gif">
+</div>
+<div id="content">
+
+	<!--code for nav bar-->
+	<div id="menu">
+        <ul>
+			<li><a href="Main.htm">Home</a></li>
+			<li><a href="about.html">About</a></li>
+            <li><a href="#">Menu</a>
+				<ul>
+					<li><a href="vegthali.html">Veg Thali</a></li>
+					<li><a href="nonvegthali.html">Non-Veg Thali</a></li>
+					<li><a href="fastfood.html">Fast Food</a></li>
+					<li><a href="chat.html">Chat</a></li>
+					<li><a href="soup.html">Soup</a></li>
+					<li><a href="pasta.html">Pasta</a></li>
+				</ul> 
+			</li>
+			<li><a href="#"><font>Order</font></a></li>
+            <li><a href="contact.htm">Contact</a></li>
+        </ul>
+    </div>
+	<!--code for nav bar-->
+	
+	<br>
+	<br>
+	<br>
+	<h1 align="center">Enter Order Details</h1>
+	<br>
+	<br>
+	
+	<div>
+	<form>
+		<center>
+		<table border="0" width="60%">
+			<tr>
+				<td width="20%">Name</td>
+				<td width="40%"><input type="text" placeholder="Name"></td>
+			</tr>
+			<tr>
+				<td>E-mail</td>
+				<td><input type="text" placeholder="E-mail"></td>
+			</tr>
+			<tr>
+				<td>Mobile</td>
+				<td><input type="text"placeholder="Mobile" required></td>
+			</tr>
+			<tr>
+				<td>Item</td>
+				<td>
+					<select class="select1" onmousedown="if(this.options.length>4){this.size=4;}" onchange='this.size=0;' onblur="this.size=0;">
+						<option>Veg Thali 1</option>
+						<option>Sp.Veg Thali</option>
+						<option>Veg Thali 2</option>
+						<option>Paneer Thali</option>
+						<option>Maharaja Thali</option>
+						<option>Veg Thali 3</option>
+						<option>Kadai Thali</option>
+						<option>Paneer Thali 2</option>
+						<option>Sp.Veg Thali 2</option>
+						<option>Special Mutton Thali</option>
+						<option>Chicken Curry Thali</option>
+						<option>Chicken Thali 2</option>
+						<option>N.Special Thali</option>
+						<option>Chicken Tandoori</option>
+						<option>Non-Veg Platter</option>
+						<option>Kerala Chicken Thali</option>
+						<option>Chicken Handi</option>
+						<option>Chicken Curry and fry</option>
+						<option>Masala Dosa</option>
+						<option>Bread Pakora</option>
+						<option>Steamed Momos</option>
+						<option>Veg pakora</option>
+						<option>Dahi Papdi</option>
+						<option>Vada Paw</option>
+						<option>Idli</option>
+						<option>French Fries</option>
+						<option>Raj Kachori</option>
+						<option>Chat 1</option>
+						<option>Chat 2</option>
+						<option>Chat 3</option>
+						<option>Chat 4</option>
+						<option>Chat 5</option>
+						<option>Chat 6</option>
+						<option>Chat 7</option>
+						<option>Chat 8</option>
+						<option>Chat 9</option>
+						<option>Creamy pumpkin soup</option>
+						<option>Light Veg Soup</option>
+						<option>Tomato Soup</option>
+						<option>Prawn and Mushroom Soup</option>
+						<option>Hot & Sour Chichen Soup</option>
+						<option>Mix Veg Soup</option>
+						<option>Hot & Spicy Soup</option>
+						<option>Creamy Mushroon Soup</option>
+						<option>Creamy White Soup & Sandwich</option>
+						<option>Red Sauce Penne Pasta</option>
+						<option>Leafy Fusilli Pasta</option>
+						<option>Veg Pappardelle</option>
+						<option>Veg Tagliatelle</option>
+						<option>White Sauce Penne Pasta</option>
+						<option>Veg Fusilli Salad</option>
+						<option>Spicy Macaroni</option>
+						<option>Red Sauce Startinni</option>
+						<option>Indian Style Spicy Macaroni</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Quantity</td>
+				<td>
+					<select>
+						<option>1</option>
+						<option>2</option>
+						<option>3</option>
+						<option>4</option>
+						<option>5</option>
+						<option>6</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><textarea placeholder="Address"></textarea></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><input type="button" value="Place Order"></td>
+			</tr>
+	
+		</table>		
+	</center>
+	</form>
+	<br>
+	<br>
+	
+	<!--code for footer-->
+	
+	<div class="footer">
+		<div class="footerb">
+		<b>QUICK LINKS</B>
+		<br><br><br>
+		<a href="Main.htm">Home</a><br>
+		<a href="about.html">About</a><br>
+		<a href="order.htm">Order</a><br>
+		<a href="contact.htm">Contact</a><br>
+		</div>
+		
+		<div class="footerb">
+		<b>MENU</B>
+		<br><br><br>
+		<a href="vegthali.html">Veg Thali</a><br>
+		<a href="nonvegthali.html">Non-Veg Thali</a><br>
+		<a href="fastfood.html">Fast Food</a><br>
+		<a href="chat.html">Chat</a><br>
+		<a href="soup.html">Soup</a><br>
+		<a href="pasta.html">Pasta</a><br>
+		</div>
+		
+		<div class="footerb">
+		<b>ADDRESS</B>
+		<br><br><br>
+		Nitte Meenakshi Institute of Technology<br>
+		P.B.No.6429.<br>
+		Yelahanka<br>
+		Bangalore 560064<br>
+		</div>
+		
+		<div class="footerb">
+		<b>LOCATION</B>
+		<br><br>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.5315228259574!2d77.58520151480192!3d13.128837590752873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae170d10bb559b%3A0x2bb3892a626cf9ba!2sNitte%20Meenakshi%20Institute%20of%20Technology!5e0!3m2!1sen!2sin!4v1625855193360!5m2!1sen!2sin" width="100%" height="130" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		</div>
+	</div>
+	<!--code for footer-->
+</div>	
+</body>
+</html>
